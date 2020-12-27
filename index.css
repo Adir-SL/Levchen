@@ -1,0 +1,98 @@
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 16px 32px rgba(0,0,0,.1), 0 8px 16px rgba(0,0,0,.15), 0 4px 8px rgba(0,0,0,.2);
+}
+footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+    background-color: rgb(0, 21, 38);
+}
+header a, footer a{
+    margin: 16px;
+    color: #333333;
+    text-decoration: none;
+}
+header a:hover{
+    color: rgb(29, 113, 182);
+}
+footer a{
+    margin: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+footer a:hover{
+    opacity: 0.8;
+}
+body, section, div{
+    margin: 0;
+    padding: 0;
+}
+section{
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+section:nth-of-type(1){
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.heroImg{
+    width: 100%;
+    background-image: url(img/lev_chen.jpg);
+    background-size: cover;
+    background-position: 50% 70%;
+}
+.contentDiv{
+    /* width: 35%; */
+    width: 320px;
+    margin-left: calc(100% - 416px);
+    padding: 32px;
+    background-color: rgba(158, 38, 42, 0.9);
+    color: #ffffff;
+    transform: translate(0,8%);
+    border-radius: 4px;
+}
+h1{
+    font-weight: 100;
+    font-size: 4em;
+    padding: 0;
+    margin: 0;
+    margin-left: 32px;
+    color:rgba(158, 38, 42, 1);
+}
+.contentDiv h1{
+    margin-left: 0;
+    color: #ffffff
+}
+.flexDiv{
+    width: calc(100% - 64px);
+    margin-left: 32px;
+    margin-right: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.flexDiv div{
+    width: 128px;
+    height: 128px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    background: darkgray;
+}
+section:nth-of-type(3){
+    background-color: rgb(231, 231, 231);
+}
+section:nth-of-type(4){
+    background-color: rgb(205, 205, 205);
+}
