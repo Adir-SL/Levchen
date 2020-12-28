@@ -1,0 +1,19 @@
+@import url("header.css");
+
+body{
+    background-color: #000000;
+}
+.wrapper{
+    line-height: 0; 
+    -webkit-column-count: 5;
+    -webkit-column-gap:   8px;
+    -moz-column-count:    5;
+    -moz-column-gap:      8px;
+    column-count:         5;
+    column-gap:           8px; 
+}
+img{
+    width: 100% !important;
+    height: auto !important;
+    margin: 4px;
+}

@@ -1,0 +1,2 @@
+origBody = document.body.innerHTML;
+document.body.innerHTML = "<header><a href='cutouts.html'>Cutouts</a><a href='animations.html'>Animations</a><a href='projects.html'>Projects</a></header>" + origBody;
