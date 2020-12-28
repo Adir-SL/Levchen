@@ -30,6 +30,7 @@ header a, footer a{
     color: #333333;
     text-decoration: none;
     text-transform: capitalize;
+    transition: color 200ms linear 0s;
 }
 header .selected{
     color: #858585;
@@ -38,6 +39,17 @@ header .selected{
 header a:hover{
     color: rgb(29, 113, 182);
 }
+header a img{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 20px;
+    top: 20px;
+    transition: filter 200ms linear 0s;
+}
+header a:hover img{
+    filter: brightness(110%);
+}
 footer a{
     margin: 16px;
     color: #ffffff;
@@ -45,4 +57,9 @@ footer a{
 }
 footer a:hover{
     opacity: 0.8;
+}
+@media screen and (max-width: 900px) {
+    header a, footer a{
+        font-size: .9rem;
+    }
 }
