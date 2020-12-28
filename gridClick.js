@@ -1,7 +1,7 @@
 document.addEventListener("click", myFunction);
 
 function myFunction(e) {
-  if(e.target.tagName == "img" || e.target.tagName == "IMG"){
+  if(e.target.tagName == "img" || e.target.tagName == "IMG" && e.target.id !== "chenIcon"){
       console.log(e.target.src)
       document.getElementById("bigInner").style.backgroundImage = "url("+e.target.src+")";
       document.getElementById("bigImage").style.opacity = "1";
