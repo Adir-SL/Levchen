@@ -46,7 +46,7 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
     .wrapper{
         line-height: 0; 
         -webkit-column-count: 3;
