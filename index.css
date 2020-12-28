@@ -14,9 +14,9 @@ section:nth-of-type(1){
     background-image: url(img/lev_chen.jpg);
     background-size: cover;
     background-position: 50% 70%;
+    
 }
 .contentDiv{
-    /* width: 35%; */
     width: 320px;
     margin-left: calc(100% - 416px);
     padding: 32px;
@@ -49,17 +49,14 @@ h1{
     height: 20vw;
     margin-top: 32px;
     margin-bottom: 32px;
-    /* background: darkgray; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    /* filter: drop-shadow(0 0 0 rgba(0,0,0,1)); */
     transition: transform 200ms ease-in-out 0s;
     cursor: pointer;
 }
 .flexDiv div:hover{
     transform: scale(1.05);
-    /* filter: drop-shadow(4px 4px 4px rgba(0,0,0,.4)); */
 }
 section:nth-of-type(3){
     background-color: rgb(231, 231, 231);
