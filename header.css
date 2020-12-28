@@ -29,6 +29,11 @@ header a, footer a{
     margin: 16px;
     color: #333333;
     text-decoration: none;
+    text-transform: capitalize;
+}
+header .selected{
+    color: #858585;
+    pointer-events: none;
 }
 header a:hover{
     color: rgb(29, 113, 182);
