@@ -44,9 +44,9 @@ h1{
     display: flex;
     justify-content: space-between;
 }
-.flexDiv div{
-    width: 20vw;
-    height: 20vw;
+.flexDiv img{
+    /* max-width: 20vw; */
+    max-height: 16vw;
     margin-top: 32px;
     margin-bottom: 32px;
     background-position: center;
@@ -55,7 +55,7 @@ h1{
     transition: transform 200ms ease-in-out 0s;
     cursor: pointer;
 }
-.flexDiv div:hover{
+.flexDiv img:hover{
     transform: scale(1.05);
 }
 section:nth-of-type(3){
@@ -86,11 +86,12 @@ section:nth-of-type(4){
         margin-left: 16px;
         margin-right: 16px;
     }
-    .flexDiv div{
-        width: 30vw;
-        height: 30vw;
+    .flexDiv img{
+        /* width: 30vw;
+        height: 30vw; */
+        max-height: 30vw;
     }
-    .flexDiv div:last-of-type{
+    .flexDiv img:last-of-type, .flexDiv img:nth-of-type(3){
         display: none;
     }
     .heroImg{
