@@ -28,9 +28,19 @@ document.getElementById("bigImage").addEventListener('touchend', function(e) {
   tempAft = temp.slice(temp.lastIndexOf("."), temp.length);
   temp = temp.slice(temp.lastIndexOf("_")+1, temp.lastIndexOf("."));
   temp = Number(temp);
-  if(deltaX > 0){
-    document.getElementById("bigInner").style.backgroundImage = tempBef+(Number(temp)+1)+tempAft;
+  if(deltaX < 0){
+    if(Number(temp) > document.getElementsByTagName("img").length - 4){
+      document.getElementById("bigImage").style.opacity = "0";
+      document.getElementById("bigImage").style.pointerEvents = "none";
+    }else{
+      document.getElementById("bigInner").style.backgroundImage = tempBef+(Number(temp)+1)+tempAft;
+    }
   }else{
-    document.getElementById("bigInner").style.backgroundImage = tempBef+(Number(temp)-1)+tempAft;
+    if(Number(temp) == 1){
+      document.getElementById("bigImage").style.opacity = "0";
+      document.getElementById("bigImage").style.pointerEvents = "none";
+    }else{
+      document.getElementById("bigInner").style.backgroundImage = tempBef+(Number(temp)-1)+tempAft;
+    }
   }
 }, false);
