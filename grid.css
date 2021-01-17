@@ -50,13 +50,8 @@ body{
     background-size: contain;
 }
 @media screen and (max-width: 500px) {
-    .wrapper{
-        line-height: 0; 
-        -webkit-column-count: 3;
-        -webkit-column-gap:   8px;
-        -moz-column-count:    3;
-        -moz-column-gap:      8px;
-        column-count:         3;
-        column-gap:           8px; 
+    .wrapper img{
+        height: 100px;
+        width: auto;
     }
 }
