@@ -4,24 +4,25 @@ body{
     background-color: #ffffff;
 }
 .wrapper{
-    line-height: 0; 
-    -webkit-column-count: 6;
-    -webkit-column-gap:   8px;
-    -moz-column-count:    6;
-    -moz-column-gap:      8px;
-    column-count:         6;
-    column-gap:           8px; 
+    display: flex;
+    flex-wrap: wrap;
 }
 .wrapper img{
-    width: 100% !important;
-    height: auto !important;
-    margin: 4px;
+    height: 200px;
+    width: auto;
+    flex-grow: 1;
+    /* margin: 4px; */
+    object-fit: cover;
     cursor: pointer;
+    transform: scale(0.95);
     transition: transform 200ms ease-in-out 0s;
 }
 .wrapper img:hover{
-    transform: scale(1.05);
+    transform: scale(1);
 }
+/* .wrapper img:nth-last-of-type(1), .wrapper img:nth-last-of-type(2){
+    flex-grow: 0;
+} */
 #bigImage{
     position: fixed;
     width: 100%;
