@@ -20,9 +20,11 @@ body{
 .wrapper img:hover{
     transform: scale(1);
 }
-/* .wrapper img:nth-last-of-type(1), .wrapper img:nth-last-of-type(2){
-    flex-grow: 0;
-} */
+.wrapper::after {
+    content: '';
+    flex-grow: 9999;
+}
+
 #bigImage{
     position: fixed;
     width: 100%;
