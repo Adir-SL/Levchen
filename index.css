@@ -46,9 +46,13 @@ h1{
 }
 .flexDiv img{
     /* max-width: 20vw; */
-    max-height: 16vw;
-    margin-top: 32px;
+    /* max-height: 16vw;
+    margin-top: 32px; */
     margin-bottom: 32px;
+    flex-grow: 1;
+    height: 300px;
+    object-fit: cover;
+    transform: scale(0.95);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -56,7 +60,7 @@ h1{
     cursor: pointer;
 }
 .flexDiv img:hover{
-    transform: scale(1.05);
+    transform: scale(1);
 }
 section:nth-of-type(3){
     background-color: rgb(231, 231, 231);
