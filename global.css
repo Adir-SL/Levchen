@@ -10,8 +10,9 @@ body, section, div{
     padding: 0;
 }
 header a, footer a, header .selected{
-    opacity: 0;
-    animation: textBlink 200ms linear forwards 100ms;
+    font-display: optional;
+    /* opacity: 0;
+    animation: textBlink 200ms linear forwards 100ms; */
 }
 header{
     position: sticky;
